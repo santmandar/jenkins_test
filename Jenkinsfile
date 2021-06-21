@@ -38,7 +38,7 @@ pipeline {
                 success {
                     junit 'api-gateway/target/surefire-reports/*.xml'
                     archiveArtifacts 'api-gateway/target/*.jar'
-                    emailext body: "Please check console output at $BUILD_URL for more information.\n", to:"sant.mandar@gmail.com:, subject:"Jenkins Training - Build status is "
+                    emailext body: "Please check console output at $BUILD_URL for more information\n", to: "sathishbob@gmail.com", subject: 'JenkinsTraining - $PROJECT_NAME is completed - Build number is $BUILD_NUMBER - Build status is $BUILD_STATUS'
 
                 }
             }
