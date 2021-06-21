@@ -22,7 +22,7 @@ pipeline {
         }
         stage('pullscm') {
             steps {
-                git credentialsId: 'github', url: 'git@github.com:sathishbob/jenkins_test.git'
+                git credentialsId: 'github', url: 'git@github.com:santmandar/jenkins_test.git'
             }
         }
         stage('Build') {
